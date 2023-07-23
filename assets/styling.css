@@ -50,6 +50,6 @@ p {
 
 @media (max-width: 768px) {
     body, .contact-details {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
