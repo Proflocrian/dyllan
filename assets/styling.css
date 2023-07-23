@@ -6,7 +6,6 @@
     --font-weight: 300;
 }
 
-
 h1, h2, h3, h4, h5, body {
     font-family: var(--primary-font-family);
     color: var(--primary-colour);
@@ -43,11 +42,14 @@ p {
     font-style: italic;
 }
 
-
-
 .item-content, .item-list {
     font-family: var(--primary-font-family);
     color: var(--secondary-colour);
     font-weight: var(--font-weight);
 }
 
+@media (max-width: 768px) {
+    body, .contact-details {
+        font-size: 12px;
+    }
+}
