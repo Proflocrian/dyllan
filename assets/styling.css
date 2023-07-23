@@ -1,0 +1,53 @@
+:root {
+    --primary-colour: #303192;
+    --secondary-colour: #000000;
+    --primary-font-family: 'Ubuntu', sans-serif;
+    --secondary-font-family: 'Ubuntu', sans-serif;
+    --font-weight: 300;
+}
+
+
+h1, h2, h3, h4, h5, body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-colour);
+    font-weight: var(--font-weight);
+}
+
+p {
+    font-family: var(--primary-font-family);
+    color: var(--secondary-colour);
+    font-weight: var(--font-weight);
+}
+
+.profile-pic {
+    max-width: 120px;;
+}
+
+.contact-details {
+    font-size: 14px;
+}
+
+.section-header {
+    font-variant: small-caps;
+}
+
+.item-header {
+    font-family: var(--primary-font-family);
+    color: var(--secondary-colour);
+    font-weight: normal;
+}
+
+.item-sub-header {
+    font-family: var(--primary-font-family);
+    color: var(--secondary-colour);
+    font-style: italic;
+}
+
+
+
+.item-content, .item-list {
+    font-family: var(--primary-font-family);
+    color: var(--secondary-colour);
+    font-weight: var(--font-weight);
+}
+
