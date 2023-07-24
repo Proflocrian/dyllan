@@ -1,5 +1,5 @@
 // Custom JavaScript for the theme switch
-$(document).ready(function () {
+$(function () {
     const themeSwitch = document.getElementById('themeSwitch');
 
     themeSwitch.addEventListener('change', function () {
