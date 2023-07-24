@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="assets/bootstrap.css">
     <script defer src="assets/fontawesome/js/all.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,900">
+    <script src="assets/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/script.js"></script>
     <link rel="stylesheet" href="assets/styling.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+
+<!-- Add the light/dark theme switch container -->
+<div class="theme-switch-container">
+    <input type="checkbox" id="themeSwitch" class="theme-switch">
+    <label for="themeSwitch" class="theme-switch-label"></label>
+    <i class="mx-2 fa-regular fa-moon"></i>
+</div>
 
 <div class="container">
     <div class="container px-3 px-lg-5">
@@ -71,7 +80,7 @@
                     <div class="item mb-3">
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">ParaMedir</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 Groningen | 2021–Current
                             </div>
                         </div>
@@ -98,7 +107,7 @@
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">GitGud Software
                                 Development</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 Groningen | 2022–Current
                             </div>
                         </div>
@@ -118,7 +127,7 @@
                     <div class="item mb-3">
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Nuggit</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 (Remote) London | 2023–Current
                             </div>
                         </div>
@@ -138,7 +147,7 @@
                     <div class="item mb-3">
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Informa Tech</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 (Remote) London | 2021–2022
                             </div>
                         </div>
@@ -159,7 +168,7 @@
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Teaching at Rijksuniversiteit
                                 Groningen</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 Groningen | 2020–2023
                             </div>
                         </div>
@@ -189,7 +198,7 @@
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Rijksuniversiteit
                                 Groningen</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 Groningen | 2019 - 2023
                             </div>
                         </div>
@@ -211,7 +220,7 @@
                     <div class="item mb-3">
                         <div class="row align-items-center mb-2">
                             <h5 class="item-header col-12 col-md-6 col-lg-8 mb-2 mb-md-0">iGEM</h5>
-                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                            <div class="item-sub-header col-12 col-md-6 col-lg-4 text-start text-md-end">
                                 Groningen | 2023
                             </div>
                         </div>

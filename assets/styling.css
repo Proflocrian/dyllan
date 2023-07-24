@@ -1,29 +1,51 @@
 :root {
-    --primary-colour: #303192;
-    --secondary-colour: #000000;
+    --primary-text-colour: #303192;
+    --secondary-text-colour: #000000;
+    --bg-colour: white;
+    --btn-bg-colour: var(--primary-text-colour);
+    --btn-bg-hover-colour: #5254C7;
+    --link-colour: #0000FF;
     --primary-font-family: 'Ubuntu', sans-serif;
-    --secondary-font-family: 'Ubuntu', sans-serif;
     --font-weight: 300;
+    --resume-wrapper-radius: 0px;
 }
 
 h1, h2, h3, h4, h5, body {
     font-family: var(--primary-font-family);
-    color: var(--primary-colour);
+    color: var(--primary-text-colour);
     font-weight: var(--font-weight);
 }
 
 p {
     font-family: var(--primary-font-family);
-    color: var(--secondary-colour);
+    color: var(--secondary-text-colour);
     font-weight: var(--font-weight);
 }
 
+a {
+    color: var(--link-colour);
+}
+
+.resume-wrapper {
+    border: var(--resume-wrapper-radius) solid var(--primary-text-colour);
+}
+
+.resume-wrapper, .container {
+    transition: background-color 0.5s;
+    background-color: var(--bg-colour);
+}
+
 .btn-primary {
-    background-color: var(--primary-colour);
-    border: 0px solid var(--primary-colour);
+    transition: background-color 0.5s;
+    background-color: var(--btn-bg-colour);
+    border: 1 solid var(--btn-bg-colour);
     font-family: var(--primary-font-family);
     color: white;
     font-weight: var(--font-weight);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-bg-hover-colour);
 }
 
 .profile-pic {
@@ -39,25 +61,87 @@ p {
 }
 
 .item-header {
+    /*transition: background-color 0.5s, color 0.5s;*/
     font-family: var(--primary-font-family);
-    color: var(--secondary-colour);
+    color: var(--secondary-text-colour);
     font-weight: normal;
 }
 
 .item-sub-header {
+    /*transition: background-color 0.5s, color 0.5s;*/
     font-family: var(--primary-font-family);
-    color: var(--secondary-colour);
+    color: var(--secondary-text-colour);
     font-style: italic;
 }
 
 .item-content, .item-list {
+    /*transition: background-color 0.5s, color 0.5s;*/
     font-family: var(--primary-font-family);
-    color: var(--secondary-colour);
+    color: var(--secondary-text-colour);
     font-weight: var(--font-weight);
 }
 
+/* Theme switch */
+body {
+    transition: background-color 0.5s, color 0.5s;
+    background-color: var(--bg-colour);
+}
+
+.theme-switch-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-switch {
+    display: none;
+}
+
+.theme-switch-label {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.theme-switch-label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.theme-switch:checked + .theme-switch-label {
+    background-color: #333;
+}
+
+.theme-switch:checked + .theme-switch-label:before {
+    transform: translateX(20px);
+}
+
+/* Phone screen */
 @media (max-width: 768px) {
     body, .contact-details {
         font-size: 12px;
     }
+
+    .theme-switch-container {
+        position: fixed;
+        bottom: 7px;
+        right: 7px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 }
+
