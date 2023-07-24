@@ -18,6 +18,14 @@ p {
     font-weight: var(--font-weight);
 }
 
+.btn-primary {
+    background-color: var(--primary-colour);
+    border: 0px solid var(--primary-colour);
+    font-family: var(--primary-font-family);
+    color: white;
+    font-weight: var(--font-weight);
+}
+
 .profile-pic {
     max-width: 120px;;
 }
